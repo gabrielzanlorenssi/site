@@ -1,31 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
+<!-- Head configuration -->
   <head>
     <meta charset="UTF-8" />
     <title>Gabriel Zanlorenssi</title>
-    <link href="styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A demo site to use with Netlify Drop">
-    <meta name="keywords" content="Thanos, JavaScript, Paradoy, Netlify Drop">
-    <meta name="author" content="Rafael Conde">
-
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <meta name="description" content="My personal website">
+    <meta name="keywords" content="R, rstats, data science, Gabriel Zanlorenssi">
+    <meta name="author" content="Gabriel Zanlorenssi">
   </head>
+
+<!-- Body -->
   <body>
+
     <div class="titan-background">
       <span class="stars stars-L"></span>
       <span class="stars stars-M"></span>
       <span class="stars stars-S"></span>
     </div>
+
     <div class="marvellous-container">
       <div class="header">
-        <h1><span class="title-marvel">Gabriel Zanlorenssi</span> <span class="title-studios">JS</span></h1>
+        <h1><span class="title-marvel">Gabriel Zanlorenssi</span></h1>
         <h2>
           Cientista de Dados no Nexo Jornal, <br />
           mestre em Ciência Política pela USP.
         </h2>
       </div>
+
+
       <div class="installation-instructions">
         <h3>Installation</h3>
         <code>$ gem install power</code>
@@ -40,12 +45,26 @@
         <code>$ thanos snap-fingers --with-glove</code>
       </div>
       <div class="footer">
-        <img src="assets/glove.png" alt="thanos gauntlet but its like the classic emoji hands with an awful photoshop of stupid gems on it, because funny"/>
         <p>
-          This whole site is obviously a parody, <br />
-          just to demo how awesome <a target="_blank" href="https://app.netlify.com/drop">Netlify Drop is — give it a try.</a>
+          Gabriel Zanlorenssi <br />
+          <p id="update-date">..</p>
         </p>
       </div>
     </div>
+
+  <!-- My script -->
+<script>
+    var d = new Date()
+    var year = d.getFullYear()
+    var month = d.getMonth()
+    document.getElementById("update-date").innerHTML =  `Last update: ${month}-${year}`;
+
+</script>
+
+<!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   </body>
 </html>
