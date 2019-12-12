@@ -276,3 +276,22 @@ p {
   border-radius: 8px;
   margin-bottom: 16px;
 }
+
+.form button {
+  background-color: white; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  font-family: Allerta;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: red; /* Green */
+  color: white; 
+}

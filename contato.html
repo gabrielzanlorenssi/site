@@ -66,8 +66,11 @@
         <label>E-mail: <input type="email" name="email" required /></label>
     </p>
       <p>
-        <label>Mensagem: <textarea name="message"></textarea></label>
+        <label>Mensagem: <textarea name="message" required></textarea></label>
       </p>
+    <p>
+    Todos os campos devem ser preenchidos.
+    </p>
       <p>
         <button type="submit">Enviar</button>
       </p>
@@ -88,9 +91,8 @@
     <script>
         var d = new Date()
         var year = d.getFullYear()
-        var month = d.getMonth()
+        var month = d.getMonth()+1
         document.getElementById("update-date").innerHTML = `Atualizado em: ${month}-${year}`;
-
     </script>
 
     <!-- Bootstrap -->
