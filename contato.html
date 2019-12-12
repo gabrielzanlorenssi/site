@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head configuration -->
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Gabriel Zanlorenssi: CV</title>
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal website">
+    <meta name="keywords" content="R, rstats, data science, Gabriel Zanlorenssi">
+    <meta name="author" content="Gabriel Zanlorenssi">
+</head>
+
+<body>
+
+    <div class="my-background"></div>
+    <div class="my-container">
+
+        <!-- navbar-->
+        <div class="menu">
+            <h1>Gabriel Zanlorenssi</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="consultorias.html">Consultorias</a></li>
+                <li class="active"><a href="">Contato</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="post.html">Posts</a></li>
+        </div>
+
+        <!-- content -->
+        <div class="container" style="margin-top: 50px;">
+            <p>Entre em contato pelas redes abaixo ou pelo formulário:</p>
+        </div>
+
+        <!-- motivos
+        <ul>
+            <li>Dúvidas sobre programação</li>
+            <li>Freelances e cursos</li>
+            <li>Convites para eventos</li>
+        </ul>-->
+
+        <!-- contato -->
+
+        <div style="margin-top: 50px;">
+            <p>GitHub - Linkedin - Twitter</p>
+        </div>
+        <div>
+            <a href="https://github.com/gabrielzanlorenssi" target="_blank" class="fa fa-github"></a>
+            <a href="https://www.linkedin.com/in/gabriel-zanlorenssi/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://twitter.com/gzanlorenssi" target="_blank" class="fa fa-twitter"></a>
+        </div>
+
+
+            <!-- form -->
+
+    <div class="form">
+    <form name="contact" method="POST" data-netlify="true">
+    <p>
+    <label>Nome: <input type="nome" name="nome" required /></label>
+    </p>
+    <p>
+        <label>E-mail: <input type="email" name="email" required /></label>
+    </p>
+      <p>
+        <label>Mensagem: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Enviar</button>
+      </p>
+    </form>
+    </div>
+
+        <!-- Footer-->
+        <div class="footer">
+            <p>
+                Gabriel Zanlorenssi <br />
+                <p id="update-date">..</p>
+            </p>
+        </div>
+    </div>
+
+    </div>
+    <!-- My script -->
+    <script>
+        var d = new Date()
+        var year = d.getFullYear()
+        var month = d.getMonth()
+        document.getElementById("update-date").innerHTML = `Atualizado em: ${month}-${year}`;
+
+    </script>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
